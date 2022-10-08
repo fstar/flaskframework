@@ -1,0 +1,19 @@
+repos:
+  - repo: local
+    hooks:
+      - id: yapf
+        name: yapf
+        entry: yapf
+        language: python
+        types: [python]
+        args: ["--in-place", "--style=.style.yapf", "--parallel"]
+        require_serial: false
+        additional_dependencies: []
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: python
+        types: [python]
+        args: ["--rcfile=pylintrc"]
+        require_serial: false
+        additional_dependencies: []

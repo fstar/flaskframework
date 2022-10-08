@@ -1,0 +1,2 @@
+graft fx_flask/init/template
+recursive-exclude fx_flask/init/template  *.pyc

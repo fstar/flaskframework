@@ -1,0 +1,784 @@
+# Chinese (Simplified, China) translations for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-01-08 14:43+0800\n"
+"PO-Revision-Date: 2019-11-20 10:16+0800\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_Hans_CN\n"
+"Language-Team: zh_Hans_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: app/flask_app.py:105
+msgid "请登录后访问"
+msgstr ""
+
+#: app/validators.py:28
+msgid "{} not in range {}"
+msgstr ""
+
+#: app/validators.py:41
+msgid "{} not lower than {}"
+msgstr ""
+
+#: app/validators.py:58
+msgid "{} not greater than {}"
+msgstr ""
+
+#: app/validators.py:81
+msgid "{} not exists"
+msgstr ""
+
+#: app/validators.py:84
+msgid "{} is not dir"
+msgstr ""
+
+#: app/validators.py:95
+msgid "Duplicate record in {}"
+msgstr ""
+
+#: app/validators.py:106
+msgid "配置不存在"
+msgstr ""
+
+#: app/validators.py:136
+msgid "invalid type: not dict or object!"
+msgstr ""
+
+#: app/validators.py:153
+msgid "invalid type: not string!"
+msgstr ""
+
+#: app/validators.py:170
+msgid "原片只能设置全部分支，全部图像"
+msgstr ""
+
+#: app/validators.py:178
+msgid "{} 重复"
+msgstr ""
+
+#: app/constants/diagnosis.py:9 app/constants/diagnosis.py:17
+msgid "完全闭塞"
+msgstr ""
+
+#: app/constants/diagnosis.py:10 app/constants/diagnosis.py:18
+msgid "重度狭窄"
+msgstr ""
+
+#: app/constants/diagnosis.py:11 app/constants/diagnosis.py:19
+msgid "中度狭窄"
+msgstr ""
+
+#: app/constants/diagnosis.py:12 app/constants/diagnosis.py:20
+msgid "轻度狭窄"
+msgstr ""
+
+#: app/constants/diagnosis.py:13 app/constants/diagnosis.py:22
+msgid "未见明显狭窄"
+msgstr ""
+
+#: app/constants/diagnosis.py:21
+msgid "轻微狭窄"
+msgstr ""
+
+#: app/constants/naming_rule.py:12 app/constants/naming_rule.py:237
+msgid "左前降支"
+msgstr ""
+
+#: app/constants/naming_rule.py:16 app/constants/naming_rule.py:99
+#: app/constants/naming_rule.py:241 app/constants/naming_rule.py:328
+msgid "第一对角支"
+msgstr ""
+
+#: app/constants/naming_rule.py:20 app/constants/naming_rule.py:105
+#: app/constants/naming_rule.py:245 app/constants/naming_rule.py:334
+msgid "第二对角支"
+msgstr ""
+
+#: app/constants/naming_rule.py:24 app/constants/naming_rule.py:249
+msgid "左回旋支"
+msgstr ""
+
+#: app/constants/naming_rule.py:28 app/constants/naming_rule.py:116
+#: app/constants/naming_rule.py:223
+msgid "左边缘支"
+msgstr ""
+
+#: app/constants/naming_rule.py:32 app/constants/naming_rule.py:136
+#: app/constants/naming_rule.py:218 app/constants/naming_rule.py:261
+#: app/constants/naming_rule.py:372 app/constants/naming_rule.py:469
+msgid "中间支"
+msgstr ""
+
+#: app/constants/naming_rule.py:36 app/constants/naming_rule.py:265
+msgid "右冠状动脉"
+msgstr ""
+
+#: app/constants/naming_rule.py:40 app/constants/naming_rule.py:126
+#: app/constants/naming_rule.py:269 app/constants/naming_rule.py:362
+msgid "左后降支"
+msgstr ""
+
+#: app/constants/naming_rule.py:44 app/constants/naming_rule.py:74
+#: app/constants/naming_rule.py:273 app/constants/naming_rule.py:303
+msgid "右后降支"
+msgstr ""
+
+#: app/constants/naming_rule.py:48 app/constants/naming_rule.py:141
+#: app/constants/naming_rule.py:277 app/constants/naming_rule.py:377
+msgid "左室左后支"
+msgstr ""
+
+#: app/constants/naming_rule.py:52 app/constants/naming_rule.py:131
+#: app/constants/naming_rule.py:281 app/constants/naming_rule.py:367
+msgid "左室后支"
+msgstr ""
+
+#: app/constants/naming_rule.py:59 app/constants/naming_rule.py:288
+msgid "右冠状动脉近段"
+msgstr ""
+
+#: app/constants/naming_rule.py:60 app/constants/naming_rule.py:85
+#: app/constants/naming_rule.py:112 app/constants/naming_rule.py:215
+#: app/constants/naming_rule.py:221 app/constants/naming_rule.py:226
+#: app/constants/naming_rule.py:289 app/constants/naming_rule.py:314
+#: app/constants/naming_rule.py:341 app/constants/naming_rule.py:466
+#: app/constants/naming_rule.py:472 app/constants/naming_rule.py:478
+msgid "近段"
+msgstr ""
+
+#: app/constants/naming_rule.py:64 app/constants/naming_rule.py:293
+msgid "右冠状动脉中段"
+msgstr ""
+
+#: app/constants/naming_rule.py:65 app/constants/naming_rule.py:90
+#: app/constants/naming_rule.py:216 app/constants/naming_rule.py:227
+#: app/constants/naming_rule.py:294 app/constants/naming_rule.py:319
+#: app/constants/naming_rule.py:467 app/constants/naming_rule.py:479
+msgid "中段"
+msgstr ""
+
+#: app/constants/naming_rule.py:69 app/constants/naming_rule.py:298
+msgid "右冠状动脉远段"
+msgstr ""
+
+#: app/constants/naming_rule.py:70 app/constants/naming_rule.py:95
+#: app/constants/naming_rule.py:217 app/constants/naming_rule.py:228
+#: app/constants/naming_rule.py:299 app/constants/naming_rule.py:324
+#: app/constants/naming_rule.py:468 app/constants/naming_rule.py:480
+msgid "远段"
+msgstr ""
+
+#: app/constants/naming_rule.py:79 app/constants/naming_rule.py:308
+msgid "左主干"
+msgstr ""
+
+#: app/constants/naming_rule.py:84 app/constants/naming_rule.py:313
+msgid "左前降支近段"
+msgstr ""
+
+#: app/constants/naming_rule.py:89 app/constants/naming_rule.py:318
+msgid "左前降支中段"
+msgstr ""
+
+#: app/constants/naming_rule.py:94 app/constants/naming_rule.py:323
+msgid "左前降支远段"
+msgstr ""
+
+#: app/constants/naming_rule.py:101 app/constants/naming_rule.py:107
+#: app/constants/naming_rule.py:330 app/constants/naming_rule.py:336
+msgid "对角支"
+msgstr ""
+
+#: app/constants/naming_rule.py:111 app/constants/naming_rule.py:340
+msgid "左回旋支近段"
+msgstr ""
+
+#: app/constants/naming_rule.py:121 app/constants/naming_rule.py:351
+msgid "左回旋支中远段"
+msgstr ""
+
+#: app/constants/naming_rule.py:122 app/constants/naming_rule.py:222
+#: app/constants/naming_rule.py:352 app/constants/naming_rule.py:473
+msgid "中远段"
+msgstr ""
+
+#: app/constants/naming_rule.py:162 app/constants/naming_rule.py:399
+msgid "LAD近段"
+msgstr ""
+
+#: app/constants/naming_rule.py:165 app/constants/naming_rule.py:402
+msgid "LAD中段"
+msgstr ""
+
+#: app/constants/naming_rule.py:168 app/constants/naming_rule.py:405
+msgid "LAD远段"
+msgstr ""
+
+#: app/constants/naming_rule.py:171 app/constants/naming_rule.py:408
+msgid "LCX近段"
+msgstr ""
+
+#: app/constants/naming_rule.py:174 app/constants/naming_rule.py:411
+msgid "LCX中远段"
+msgstr ""
+
+#: app/constants/naming_rule.py:177 app/constants/naming_rule.py:414
+msgid "RCA近段"
+msgstr ""
+
+#: app/constants/naming_rule.py:180 app/constants/naming_rule.py:417
+msgid "RCA中段"
+msgstr ""
+
+#: app/constants/naming_rule.py:183 app/constants/naming_rule.py:420
+msgid "RCA远段"
+msgstr ""
+
+#: app/constants/naming_rule.py:211 app/constants/naming_rule.py:462
+msgid "左主干（LM）"
+msgstr ""
+
+#: app/constants/naming_rule.py:212 app/constants/naming_rule.py:463
+msgid "前降支（LAD）"
+msgstr ""
+
+#: app/constants/naming_rule.py:213 app/constants/naming_rule.py:464
+msgid "回旋支（CX）"
+msgstr ""
+
+#: app/constants/naming_rule.py:214 app/constants/naming_rule.py:465
+msgid "右冠状动脉（RCA）"
+msgstr ""
+
+#: app/constants/naming_rule.py:219 app/constants/naming_rule.py:470
+msgid "对角支（D1）"
+msgstr ""
+
+#: app/constants/naming_rule.py:220 app/constants/naming_rule.py:471
+msgid "对角支（D2）"
+msgstr ""
+
+#: app/constants/naming_rule.py:224 app/constants/naming_rule.py:476
+msgid "左后降支（L-PDA）"
+msgstr ""
+
+#: app/constants/naming_rule.py:225 app/constants/naming_rule.py:477
+msgid "左室左后支（L-PLB）"
+msgstr ""
+
+#: app/constants/naming_rule.py:229 app/constants/naming_rule.py:481
+msgid "右后降支（R-PDA）"
+msgstr ""
+
+#: app/constants/naming_rule.py:230 app/constants/naming_rule.py:482
+msgid "左室后支（R-PLB）"
+msgstr ""
+
+#: app/constants/naming_rule.py:253 app/constants/naming_rule.py:345
+msgid "第一钝缘支"
+msgstr ""
+
+#: app/constants/naming_rule.py:257 app/constants/naming_rule.py:356
+msgid "第二钝缘支"
+msgstr ""
+
+#: app/constants/naming_rule.py:347 app/constants/naming_rule.py:358
+msgid "钝缘支"
+msgstr ""
+
+#: app/constants/naming_rule.py:474
+msgid "钝缘支（OM1）"
+msgstr ""
+
+#: app/constants/naming_rule.py:475
+msgid "钝缘支（OM2）"
+msgstr ""
+
+#: app/constants/naming_rule.py:493
+msgid "trans"
+msgstr ""
+
+#: app/resources/setting.py:123
+msgid "Invalid serial num"
+msgstr ""
+
+#: app/resources/setting.py:200 app/services/setting.py:83
+#: app/services/setting.py:93
+msgid "打印机名称不能为空"
+msgstr ""
+
+#: app/resources/setting.py:397 app/services/case.py:543
+#: app/services/helpers.py:45 app/services/helpers.py:49
+msgid "权限不足"
+msgstr ""
+
+#: app/services/case.py:163 app/services/case.py:188 app/services/case.py:302
+#: app/services/case.py:331 app/services/case.py:352 app/services/case.py:1290
+#: app/services/case.py:1361 app/services/case_statistic.py:353
+#: app/services/feedback.py:51 app/services/hi.py:240 app/services/issue.py:42
+#: app/services/output.py:844 app/services/patient.py:163
+#: app/services/report.py:502 app/services/tag.py:34 app/services/tag.py:51
+msgid "Case not existed"
+msgstr ""
+
+#: app/services/case.py:173
+#, python-format
+msgid "Invalid action %s for case"
+msgstr ""
+
+#: app/services/case.py:492 app/services/case.py:505 app/services/case.py:514
+#: app/tools/sub_product_helper.py:47
+msgid "{}不存在"
+msgstr ""
+
+#: app/services/case.py:538
+msgid "该资源不存在"
+msgstr ""
+
+#: app/services/case.py:1293
+msgid "停止计算该病例失败"
+msgstr ""
+
+#: app/services/case.py:1364
+msgid "无法操作该病例"
+msgstr ""
+
+#: app/services/case.py:1407 app/services/case.py:1447
+msgid "{} not existed"
+msgstr ""
+
+#: app/services/case.py:1409
+msgid "{} 无法操作该病例"
+msgstr ""
+
+#: app/services/case.py:1415
+msgid "{} 该病例 {} 正在计算中..."
+msgstr ""
+
+#: app/services/case_statistic.py:292
+msgid "bad case not found"
+msgstr ""
+
+#: app/services/case_statistic.py:321
+msgid "Case export process has been start at {}. You can retry at {}"
+msgstr ""
+
+#: app/services/case_statistic.py:342
+msgid "please wait until other downloading task finishes"
+msgstr ""
+
+#: app/services/case_statistic.py:380
+msgid "No available serie"
+msgstr ""
+
+#: app/services/case_statistic.py:464 app/services/case_statistic.py:490
+msgid "NoResource"
+msgstr ""
+
+#: app/services/case_statistic.py:498 app/services/case_statistic.py:508
+msgid "后处理图像不合格, 诊断结果不同步"
+msgstr ""
+
+#: app/services/case_statistic.py:501 app/services/case_statistic.py:511
+msgid "后处理图像未评价, 无法同步"
+msgstr ""
+
+#: app/services/combine.py:51
+msgid "尚未开通多模显示功能"
+msgstr ""
+
+#: app/services/combine.py:59
+msgid "不存在{}类型"
+msgstr ""
+
+#: app/services/combine.py:84
+msgid "请等待影像加载完全再生成组合图！"
+msgstr ""
+
+#: app/services/combine.py:120
+msgid "该组合图已经重复"
+msgstr ""
+
+#: app/services/hi.py:79
+msgid "mode: {} not exists"
+msgstr ""
+
+#: app/services/issue.py:70
+msgid "Case issue not existed"
+msgstr ""
+
+#: app/services/meta.py:125
+msgid "case_num: {} 不存在"
+msgstr ""
+
+#: app/services/meta.py:130
+msgid "case_num: {} 的meta不存在"
+msgstr ""
+
+#: app/services/meta.py:159
+msgid "path_rule"
+msgstr ""
+
+#: app/services/meta.py:204
+msgid "其他用户正在操作此病例，不能进行命名修改"
+msgstr ""
+
+#: app/services/meta.py:384
+msgid "vessel not found: {}"
+msgstr ""
+
+#: app/services/meta.py:387
+msgid "invalid vessel: {}"
+msgstr ""
+
+#: app/services/mpr.py:79
+msgid "当前状态MPR单图已存在！请勿重复生成！"
+msgstr ""
+
+#: app/services/mpr.py:214
+msgid "当前状态MPR注释图已存在！请勿重复生成！"
+msgstr ""
+
+#: app/services/mpr.py:353
+msgid "当前状态MPR组合图已存在！请勿重复生成！"
+msgstr ""
+
+#: app/services/output.py:229 app/services/output.py:353
+msgid "case not exist"
+msgstr ""
+
+#: app/services/output.py:774
+msgid "invalid usage"
+msgstr ""
+
+#: app/services/output.py:940
+msgid "✔"
+msgstr ""
+
+#: app/services/output.py:1018
+msgid "冠状动脉分段"
+msgstr ""
+
+#: app/services/output.py:1019
+msgid "斑块类型"
+msgstr ""
+
+#: app/services/output.py:1020
+msgid "狭窄程度"
+msgstr ""
+
+#: app/services/output.py:1021
+msgid "可见"
+msgstr ""
+
+#: app/services/output.py:1022
+msgid "钙化"
+msgstr ""
+
+#: app/services/output.py:1023
+msgid "非钙化"
+msgstr ""
+
+#: app/services/output.py:1024
+msgid "混合性"
+msgstr ""
+
+#: app/services/output.py:1025
+msgid "未见狭窄"
+msgstr ""
+
+#: app/services/output.py:1026
+msgid "支架"
+msgstr ""
+
+#: app/services/output.py:1027
+msgid "肌桥"
+msgstr ""
+
+#: app/services/report.py:108
+msgid "Invalid key {} in report"
+msgstr ""
+
+#: app/services/report.py:137
+msgid "No original report found"
+msgstr ""
+
+#: app/services/roi.py:90
+msgid "请等待影像加载完全再生成roi图！"
+msgstr ""
+
+#: app/services/roi.py:132
+msgid "当前状态注释图已有！请勿重复生成！"
+msgstr ""
+
+#: app/services/setting.py:56 app/services/setting.py:69
+msgid "窗宽窗位名称或快捷键不能为空"
+msgstr ""
+
+#: app/services/setting.py:108
+msgid "服务名不能为空"
+msgstr ""
+
+#: app/services/setting.py:110
+msgid "应用实体ID不能为空"
+msgstr ""
+
+#: app/services/setting.py:127
+msgid "二维码不能为空"
+msgstr ""
+
+#: app/services/setting.py:262
+msgid "选取数量不能为空"
+msgstr ""
+
+#: app/services/setting.py:276
+msgid "No serial num existed"
+msgstr ""
+
+#: app/services/setting.py:320
+msgid "窗宽窗位名称重复"
+msgstr ""
+
+#: app/services/setting.py:323 app/services/setting.py:344
+msgid "窗宽窗位快捷键重复"
+msgstr ""
+
+#: app/services/setting.py:348 app/services/setting.py:374
+msgid "窗宽窗位快捷键配置不存在"
+msgstr ""
+
+#: app/services/setting.py:385 app/services/setting.py:401
+msgid "序列名不能为空"
+msgstr ""
+
+#: app/services/setting.py:423 app/services/setting.py:900
+#: app/services/setting.py:903 app/services/setting.py:1996
+msgid "操作不合法"
+msgstr ""
+
+#: app/services/setting.py:754
+msgid "打印机名称"
+msgstr ""
+
+#: app/services/setting.py:773
+msgid "打印设置"
+msgstr ""
+
+#: app/services/setting.py:788 app/services/setting.py:813
+msgid "打印设置不能为空"
+msgstr ""
+
+#: app/services/setting.py:805
+msgid "不允许删除默认打印机"
+msgstr ""
+
+#: app/services/setting.py:865 app/services/setting.py:889
+#: app/services/setting.py:934
+msgid "invalid push_index!"
+msgstr ""
+
+#: app/services/setting.py:897
+msgid "胶片设置不能为空"
+msgstr ""
+
+#: app/services/setting.py:948 app/services/setting.py:962
+msgid "invalid index!"
+msgstr ""
+
+#: app/services/setting.py:960
+msgid "invalid push index!"
+msgstr ""
+
+#: app/services/setting.py:1058
+msgid "规则名称不能为空"
+msgstr ""
+
+#: app/services/setting.py:1072
+msgid "推送序列设置"
+msgstr ""
+
+#: app/services/setting.py:1082 app/services/setting.py:1109
+msgid "规则名不能为空"
+msgstr ""
+
+#: app/services/setting.py:1091
+msgid "规则名称重复"
+msgstr ""
+
+#: app/services/setting.py:1120
+msgid "该配置正在被使用"
+msgstr ""
+
+#: app/services/setting.py:1201 app/services/setting.py:1242
+msgid "自定义中英文名长度不能超过10个字符"
+msgstr ""
+
+#: app/services/setting.py:1227 app/services/setting.py:1229
+#: app/services/setting.py:1271 app/services/setting.py:1273
+msgid "重复命名：{}已存在"
+msgstr ""
+
+#: app/services/setting.py:1232
+msgid "“D”或“OM”不可直接用于自定义命名，请加入序号如D3、OM3等"
+msgstr ""
+
+#: app/services/setting.py:1258
+msgid "当前不存在自定义命名"
+msgstr ""
+
+#: app/services/setting.py:1266
+msgid "index: {}超出范围，当前只有{}个自定义命名"
+msgstr ""
+
+#: app/services/setting.py:1407
+msgid "{}不能为空"
+msgstr ""
+
+#: app/services/setting.py:1471 app/services/setting.py:1484
+#: app/services/setting.py:1510 app/services/setting.py:1575
+#: app/services/setting.py:1594
+msgid "不存在该设置"
+msgstr ""
+
+#: app/services/setting.py:1579
+msgid "联系人正在使用中，请取消后重试!"
+msgstr ""
+
+#: app/services/setting.py:1733
+msgid "vr角度不能重复"
+msgstr ""
+
+#: app/tasks/hi_task.py:47 app/tools/hi_process.py:220
+msgid "请求超时"
+msgstr ""
+
+#: app/tasks/hi_task.py:73 app/tasks/hi_task.py:171
+msgid "新增血管至少有 2 个点"
+msgstr ""
+
+#: app/tasks/hi_task.py:105 app/tools/hi_process.py:349
+msgid "必须有 1 个点"
+msgstr ""
+
+#: app/tools/hi_process.py:326 app/tools/hi_process.py:503
+#: app/tools/hi_utils.py:537
+msgid "无任何更新"
+msgstr ""
+
+#: app/tools/hi_process.py:474
+msgid "选取的断裂血管点异常"
+msgstr ""
+
+#: app/tools/hi_process.py:479
+msgid "选取的分割血管点异常"
+msgstr ""
+
+#: app/tools/hi_seg_alg.py:30 app/tools/hi_seg_alg.py:400
+msgid "2 点之间无血管"
+msgstr ""
+
+#: app/tools/hi_seg_alg.py:67
+msgid "周围无可删血管"
+msgstr ""
+
+#: app/tools/hi_seg_alg.py:99
+msgid "无法找到ao"
+msgstr ""
+
+#: app/tools/hi_utils.py:118
+msgid "{}-血管概率预处理文件不存在"
+msgstr ""
+
+#: app/tools/hi_utils.py:139
+msgid "{}-血管距离文件异常"
+msgstr ""
+
+#: app/tools/hi_utils.py:174
+msgid "{}-分割体文件不存在"
+msgstr ""
+
+#: app/tools/hi_utils.py:193 app/tools/hi_utils.py:233
+msgid "{}-{}-文件格式错误"
+msgstr ""
+
+#: app/tools/roi.py:222
+msgid "当前类型：{} 不能生成注释图！"
+msgstr ""
+
+#: app/tools/roi.py:282 app/tools/roi.py:504
+msgid "面积 {} cm²"
+msgstr ""
+
+#: app/tools/roi.py:283 app/tools/roi.py:505
+msgid "最小值 {} HU"
+msgstr ""
+
+#: app/tools/roi.py:284 app/tools/roi.py:506
+msgid "最大值 {} HU"
+msgstr ""
+
+#: app/tools/roi.py:285 app/tools/roi.py:507
+msgid "平均值 {} HU"
+msgstr ""
+
+#: app/tools/roi.py:286 app/tools/roi.py:508
+msgid "标准差 {} HU"
+msgstr ""
+
+#: app/tools/roi.py:288 app/tools/roi.py:516
+msgid "长度 {} cm"
+msgstr ""
+
+#: app/tools/loaders/base.py:106
+msgid "Invalid clIndex given for current vessel"
+msgstr ""
+
+#~ msgid "禁止访问，请确认客户端是否加入了白名单"
+#~ msgstr ""
+
+#~ msgid "推送服务器不能为空"
+#~ msgstr ""
+
+#~ msgid "invalid usage: {}"
+#~ msgstr ""
+
+#~ msgid "Case not exist"
+#~ msgstr ""
+
+#~ msgid "不存在推送设置"
+#~ msgstr ""
+
+#~ msgid "不存在推送序列配置"
+#~ msgstr ""
+
+#~ msgid "不存在AE配置"
+#~ msgstr ""
+
+#~ msgid "printer setting not exist"
+#~ msgstr ""
+
+#~ msgid "printer is not exists"
+#~ msgstr ""
+
+#~ msgid "Time cannot be greater than today"
+#~ msgstr ""
+
+#~ msgid "面积 {:.2f} cm²"
+#~ msgstr ""
+
+#~ msgid "长度 {:.2f} cm"
+#~ msgstr ""
+
+#~ msgid "长度 {:} cm"
+#~ msgstr ""
+
