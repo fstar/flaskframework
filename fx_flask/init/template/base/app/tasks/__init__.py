@@ -3,7 +3,6 @@
 import logging
 from celery import Celery, platforms
 
-
 from app.dependencies import Config
 
 logger = logging.getLogger(__name__)

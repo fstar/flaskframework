@@ -3,7 +3,6 @@ import logging
 from flask import Flask
 from flask_compress import Compress
 
-
 from app.flask_restx_api import flask_restx_api
 
 logger = logging.getLogger(__name__)

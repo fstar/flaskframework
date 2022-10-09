@@ -52,10 +52,12 @@ def bind_config(binder):
     setattr(config, 'versions', config_filename)
     binder.bind(Config, config)
 
+
 def bind(binder):
     """bind instance"""
     from app.tasks import init_celery
     binder.install(bind_config)
     binder.bind_to_constructor(Celery, init_celery)
+
 
 inject.configure(bind, bind_in_runtime=False)

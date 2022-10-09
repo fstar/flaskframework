@@ -22,10 +22,5 @@ class MainDBSession(scoped_session, Session):
 @inject.autoparams()
 def init_main_db_session(app_config: Config):
     """初始化 mysql"""
-    engine = create_engine(
-        app_config.db_uri,
-        isolation_level='REPEATABLE READ',
-        pool_recycle=1800,
-        pool_pre_ping=True
-    )
+    engine = create_engine(app_config.db_uri, isolation_level='REPEATABLE READ', pool_recycle=1800, pool_pre_ping=True)
     return scoped_session(sessionmaker(engine, autocommit=True))

@@ -1,13 +1,17 @@
 """自定义异常"""
+
+
 class ClientErrStatusCode:
     """客户端异常 code"""
     base = 1000  # base
     params_err = 1001  # 参数错误
 
+
 class ExceptionErrStatusCode:
     """内部异常 code"""
     base = 2000  # base
     value_err = 2001  # 值异常
+
 
 class ThirdPartErrStatusCode:
     """请求第三方服务异常 code"""
@@ -42,4 +46,3 @@ class PlatformErr(Exception):
         self.message = message
         self.code = status_code
         super().__init__(message, status_code)
-
