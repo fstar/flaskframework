@@ -50,3 +50,6 @@ python manage.py run-alg-consumer
 
 ## 启动轮询任务
 python manage.py run-scheduler
+
+## 生成 docker 镜像
+docker build -f ./build/dockerfile -t <image_name>:<image_tag> .
