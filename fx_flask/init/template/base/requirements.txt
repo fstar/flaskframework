@@ -8,4 +8,4 @@ flask-restx==0.5.1
 Inject==4.3.1
 pytest==7.1.3
 pytest-testreport==1.1.5
-pytest-cov==3.0.6
+pytest-cov==4.0.0
