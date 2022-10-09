@@ -1,0 +1,11 @@
+FROM python3.10.7
+ARG PROJECT
+RUN mkdir /opt/$PROJECT/
+WORKDIR /opt/$PROJECT
+ADD ./requirements.txt /opt/$PROJECT/requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
+RUN find /usr/local/python3/lib/python3.7/site-packages/ -name '*.pyc' -delete
+WORKDIR /usr/bin
+RUN ln -s pip3 pip && ln -s python3 python && ln -s /usr/local/python3/bin/celery celery
+WORKDIR /opt/$PROJECT
+COPY ./ /opt/$PROJECT/
