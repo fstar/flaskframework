@@ -1,13 +1,7 @@
 # API 服务配置
-core_service_ip: 10.16.10.245
-auth_model: false
-auth_address: 10.16.10.245
-workflow: CORONARY
 enable_swagger: true
-alg_broker: 'amqp://guest:guest@localhost:5672/'
-platform_broker: 'amqp://guest:guest@localhost:5672/'
-# celery_broker: 'amqp://guest:guest@localhost:5672/'
-celery_broker: 'redis://:test@127.0.0.1:6379/1'
-# celery_backend: 'amqp://guest:guest@localhost:5672/'
-celery_backend: 'redis://:test@127.0.0.1:6379/1'
 # mongo_uri: 'mongodb://shukun:123456@127.0.0.1:27017/sk_flask'
+gunicorn_config:
+  bind: 0.0.0.0:8080
+  workers: 1
+  threads: 10

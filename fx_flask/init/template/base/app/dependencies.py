@@ -1,8 +1,8 @@
 """配置项"""
 import logging
 import os
-from dataclasses import dataclass
-from celery import Celery
+from dataclasses import dataclass, field
+from typing import Dict
 import yaml
 try:
     # use faster C loader if available
@@ -14,6 +14,10 @@ import inject
 import app
 
 logger = logging.getLogger(__name__)
+
+
+def number_of_workers():
+    return 5
 
 
 @dataclass
@@ -32,6 +36,17 @@ class Config:
 
     # db url
     db_uri: str = ''
+
+    # gunicorn配置
+    gunicorn_config: Dict = field(default_factory=dict)
+
+    def __post_init__(self):
+        if not self.gunicorn_config:
+            self.gunicorn_config = {
+                'bind': '0.0.0.0:5004',
+                'workers': number_of_workers(),
+                'threads': 2,
+            }
 
 
 def bind_config(binder):
@@ -55,9 +70,7 @@ def bind_config(binder):
 
 def bind(binder):
     """bind instance"""
-    from app.tasks import init_celery
     binder.install(bind_config)
-    binder.bind_to_constructor(Celery, init_celery)
 
 
 inject.configure(bind, bind_in_runtime=False)

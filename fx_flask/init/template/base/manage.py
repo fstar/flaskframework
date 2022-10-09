@@ -1,19 +1,13 @@
 """应用启动入口"""
 import logging
+from logging.config import fileConfig
 import os
 import numpy
 import click
 import inject
-from celery import Celery
 
-from sk_backend_common.log_handlers import init_logger
-from sk_dicom_interface.dicom_helper import patch_generate_uid
-from sk_gunicorn import run_http_server
-
-from app import flask_app
+from app import flask_app, StandaloneApplication
 from app.dependencies import Config
-from app.tasks.message_listener import MessageListener
-# from migrations.init_mongo import init_mongo_config
 
 logger = logging.getLogger(__name__)
 # numpy版本大于等于1.17.1引入的一个 feature, 将大于4M的内存，全部放入 hugepage 中，并默认开启
@@ -22,9 +16,16 @@ logger = logging.getLogger(__name__)
 # 新版numpy支持使用环境变量 export NUMPY_MADVISE_HUGEPAGE=0
 numpy.core.multiarray._set_madvise_hugepage(False)  # pylint: disable=W0212
 
-# 针对 pydicom 的 generate_uid 函数, 利用 monkey patch 的方式进行改造
-patch_generate_uid()
 config: Config = inject.instance(Config)
+
+
+def init_logger(log_config_file=None):
+    """配置 logger """
+    if log_config_file:
+        fileConfig(log_config_file, disable_existing_loggers=False)
+    else:
+        logging_config = (os.getenv('LOG_CONFIG_PATH') or os.path.join(os.path.dirname(__file__), 'log.ini'))
+        fileConfig(logging_config, disable_existing_loggers=False)
 
 
 @click.group()
@@ -56,34 +57,8 @@ def run_api_server():
     init_logger(os.path.join(os.path.dirname(__file__), 'configs', 'server.ini'))
     # 恢复
     logger.info('Run api server...')
-    run_http_server(flask_app, {'bind': '0.0.0.0:5004'})
+    StandaloneApplication(flask_app, config.gunicorn_config).run()
 
-
-@cli.command()
-def run_alg_consumer():
-    """监听 alg 消息队列"""
-    init_logger(os.path.join(os.path.dirname(__file__), 'configs', 'alg_listener.ini'))
-    MessageListener.run_alg_listener()
-
-
-@cli.command()
-def run_do_postprocess_consumer():
-    """监听 平台分发任务 消息队列"""
-    init_logger(os.path.join(os.path.dirname(__file__), 'configs', 'do_postprocess.ini'))
-    MessageListener.run_platform_listener()
-
-
-@cli.command()
-def run_scheduler():
-    """轮询任务超时"""
-    init_logger(os.path.join(os.path.dirname(__file__), 'configs', 'scheduler.ini'))
-    celery_app = inject.instance(Celery)
-    celery_app.start(argv=[
-        'celery', 'worker', '-l', 'INFO', '-c', '1', '-Q', f'{config.workflow.value.lower()}-beat-queue', '--beat'
-    ])
-
-
-celeryapp = inject.instance(Celery)
 
 if __name__ == '__main__':
     cli()
